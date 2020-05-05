@@ -35,8 +35,7 @@ ul {
 
 .enum ul li {
   float: left;
-  margin: 6px 40px 0 40px;
-  padding: 0;
+  margin: 12px 0px 0 80px;
 }
 
 .enum ul li a {
