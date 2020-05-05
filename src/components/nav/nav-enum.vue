@@ -1,8 +1,8 @@
 <template>
   <div class="enum">
     <ul>
-      <li v-for="item in items" :key="item.index">
-        <a href="#">{{ item.title }}</a>
+      <li v-for="item in items" :key="item.id">
+        <a href="#" @click="aDidSelect(item.id)">{{ item.title }}</a>
       </li>
     </ul>
   </div>
@@ -13,13 +13,18 @@ export default {
   data() {
     return {
       items: [
-        { title: "首页", index: 1 },
-        { title: "服务", index: 2 },
-        { title: "产品案例", index: 3 },
-        { title: "资讯", index: 4 },
-        { title: "关于我们", index: 25 }
+        { title: "首页", id: 1 },
+        { title: "服务", id: 2 },
+        { title: "产品案例", id: 3 },
+        { title: "资讯", id: 4 },
+        { title: "关于我们", id: 5 }
       ]
     };
+  },
+  methods: {
+    aDidSelect(id) {
+      console.log(this.items[id].title)
+    }
   }
 };
 </script>
@@ -35,8 +40,7 @@ ul {
 
 .enum ul li {
   float: left;
-  margin: 6px 40px 0 40px;
-  padding: 0;
+  margin: 12px 0px 0 80px;
 }
 
 .enum ul li a {
@@ -45,7 +49,6 @@ ul {
   color: white;
   font-family: PingFang SC;
   font-size: 16px;
-  display:block;
 }
 
 /* 还缺少选择高亮和点击高亮 */

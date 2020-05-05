@@ -2,10 +2,14 @@
   <div class="nav-container">
     <div class="nav-content">
       <!-- logo -->
-      <img class="logo" src="../../assets/qycy.png" />
+      <div class="logo-box">
+        <img src="../../assets/qycy.png" />
+      </div>
 
       <!-- 目录 -->
-      <nav-enum class="nav-enum"></nav-enum>
+      <div class="nav-enum">
+        <nav-enum></nav-enum>
+      </div>
     </div>
   </div>
 </template>
@@ -25,26 +29,26 @@ export default {
   width: 100%;
   height: 60px;
   background: #000000;
-  display: -webkit-flex; /* Safari */
-  display: flex;
-  justify-content: center;
 }
 
 .nav-content {
   width: 1200px;
   height: 100%;
-  display: -webkit-flex; /* Safari */
-  display: flex;
+  margin: 0 auto;
 }
 
-.logo {
+.logo-box {
+  height: 100%;
+  float: left;
+}
+
+.logo-box img {
   width: 115px;
   height: 40px;
   margin-top: 10px;
 }
 
 .nav-enum {
-  /* 居中 */
-  margin: 0 auto;
+  float: right;
 }
 </style>
