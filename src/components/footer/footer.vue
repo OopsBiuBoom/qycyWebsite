@@ -1,7 +1,7 @@
 <template>
     <div>
-        <footer-top/>
-        <footer-bottom/>
+        <footetTop />
+        <footerBottom />
     </div>
 </template>
 
@@ -12,12 +12,8 @@ import footerBottom from "../footer/footer-bottom"
 
 export default {
     components: {
-        "footer-top": {
-            render: h => h(footetTop)
-        },
-        "footer-bottom": {
-            render: h => h(footerBottom)
-        }
+        footetTop,
+        footerBottom
     }
 }
 </script>

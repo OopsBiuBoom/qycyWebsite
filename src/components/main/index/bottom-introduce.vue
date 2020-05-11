@@ -7,7 +7,6 @@
     <p class="bottom-introduce-contact">咨询或者预约面谈，可以拨打：{{ phone }}</p>
 
     <div class="bottom-introduce-contactButton-box">
-        <!-- <button class="bottom-introduce-contactButton">咨询在线客服</button> -->
         <el-button plain class="bottom-introduce-contactButton">咨询在线客服</el-button>
         <img src="../../../assets/bottom_introduce_bg.png" alt="">
     </div>

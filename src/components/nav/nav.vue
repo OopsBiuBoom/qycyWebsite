@@ -8,7 +8,7 @@
 
       <!-- 目录 -->
       <div class="nav-enum">
-        <nav-enum></nav-enum>
+        <navEnum/>
       </div>
     </div>
   </div>
@@ -19,7 +19,7 @@ import navEnum from "../../components/nav/nav-enum.vue";
 
 export default {
   components: {
-    "nav-enum": { render: h => h(navEnum) }
+    navEnum
   }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div id="main-container">
-        <main-index/>
+        <mainIndex />
     </div>
 </template>
 
@@ -10,9 +10,7 @@ import mainIndex from "@/components/main/index/main-index.vue"
 
 export default {
     components: {
-        "main-index": {
-            render: h => h(mainIndex)
-        }
+        mainIndex
     }
 }
 </script>
@@ -21,8 +19,6 @@ export default {
 
 #main-container {
     height: 100%;
-    /* height: 800px; */
-    /* background-color: aquamarine; */
 }
 
 </style>

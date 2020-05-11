@@ -1,28 +1,22 @@
 <template>
   <div>
-    <head-nav/>
-    <main-view/>
-    <bottom-view/>
+    <headNav/>
+    <indexMain/>
+    <bottomView/>
   </div>
 </template>
 
 <script>
 
-import nav from "../../src/components/nav/nav.vue"
+import headNav from "../../src/components/nav/nav.vue"
 import bottomView from "../../src/components/footer/footer";
-import main from "../../src/components/main/main.vue";
+import indexMain from "../../src/components/main/main.vue";
 
 export default {
   components: {
-    "head-nav": {
-      render: h => h(nav)
-    },
-    "main-view": {
-      render: h => h(main)
-    },
-    "bottom-view": {
-      render: h => h(bottomView)
-    }
+    headNav,
+    indexMain,
+    bottomView
   }
 };
 </script>
