@@ -1,5 +1,8 @@
 <template>
   <div>
+    <!-- 我们的优势 -->
+    <ourSuperiority/>
+    <!-- 一起前行 -->
     <bottomPhotos/>
     <!-- 资讯中心 -->
     <bottomMessage/>
@@ -13,9 +16,12 @@
 import bottomIntroduce from "@/components/main/index/bottom-introduce.vue"
 import bottomMessage from "@/components/main/index/main-message.vue"
 import bottomPhotos from "@/components/main/index/main-photos.vue";
+import ourSuperiority from "@/components/main/index/main-ourSuperiority.vue";
 
 export default {
   components: {
+    // 我们的优势
+    ourSuperiority,
     // 底部介绍
     bottomIntroduce,
     // 主页底部资讯
