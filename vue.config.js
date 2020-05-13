@@ -5,6 +5,7 @@ module.exports = {
         open: true, // 编译完成自动打开
         https: false, // 不开启https
     },
+    publicPath: './',
 
     productionSourceMap: false,  // 关闭生成map，加快生产环境编译速度
 

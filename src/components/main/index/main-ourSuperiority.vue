@@ -19,6 +19,7 @@
 </template>
 
 <script>
+
 import ourSuperiorityItem from "@/components/main/index/main-ourSuperiority-item.vue";
 
 export default {
@@ -26,25 +27,25 @@ export default {
     return {
       items: [
         {
-          img: "../ourSuperiority_zytd.png",
+          img: "./ourSuperiority_zytd.png",
           title: "专业团队",
           content: "经验丰富的开发团队和产品团队",
           content2: "重视产品体验和产品开发质量"
         },
         {
-          img: "../ourSuperiority_gxkf.png",
+          img: "./ourSuperiority_gxkf.png",
           title: "高效开发",
           content: "以用户需求为基准，高效开发",
           content2: "满足客户的项目进度"
         },
         {
-          img: "../ourSuperiority_yzfw.png",
+          img: "./ourSuperiority_yzfw.png",
           title: "优质服务",
           content: "全国7x24小时提供服务",
           content2: "提供专业的技术和售后服务支持"
         },
         {
-          img: "../ourSuperiority_szry.png",
+          img: "./ourSuperiority_szry.png",
           title: "始终如一",
           content: "9年专注互联网开发领域",
           content2: "服务稳定高效"
