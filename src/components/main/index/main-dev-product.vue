@@ -6,7 +6,14 @@
       <p class="dev-product-subtitle">以客户产品成功为企业价值观</p>
 
       <div class="main-dev-product-itembox">
-        <devProductItem class="main-dev-product-item" v-for="(item, index) in items" :key="index" :info="item"></devProductItem>
+        <devProductItem
+          class="main-dev-product-item"
+          v-for="(item, index) in items"
+          :key="index"
+          :info="item"
+        ></devProductItem>
+            <div style="clear:both;"></div>
+
       </div>
     </div>
     <div style="clear:both;"></div>
@@ -70,7 +77,7 @@ export default {
 }
 
 .main-dev-product-itembox {
-    margin: 46px 100px 103px 100px;
+  margin: 46px 100px 103px 100px;
 }
 
 .main-dev-product-itembox::after {

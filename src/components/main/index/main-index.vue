@@ -1,5 +1,7 @@
 <template>
   <div>
+    <!-- 优秀案例 -->
+    <excellentCase/>
     <!-- 严谨开发每一个项目 -->
     <devProduct/>
     <!-- 我们的优势 -->
@@ -20,10 +22,12 @@ import bottomMessage from "@/components/main/index/main-message.vue"
 import bottomPhotos from "@/components/main/index/main-photos.vue";
 import ourSuperiority from "@/components/main/index/main-ourSuperiority.vue";
 import devProduct from "@/components/main/index/main-dev-product.vue"
-
+import excellentCase from "@/components/main/index/main-excellent-case.vue"
 
 export default {
   components: {
+    // 优秀案例
+    excellentCase,
     // 严谨开发每一个项目
     devProduct,
     // 我们的优势
