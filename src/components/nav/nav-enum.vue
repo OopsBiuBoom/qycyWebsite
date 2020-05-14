@@ -2,7 +2,7 @@
   <div class="enum">
     <ul>
       <li v-for="item in items" :key="item.id">
-        <a href="#" @click="aDidSelect(item.id)">{{ item.title }}</a>
+        <p @click="aDidSelect(item.id)">{{ item.title }}</p>
       </li>
     </ul>
   </div>
@@ -36,25 +36,36 @@ export default {
 
 ul {
   list-style-type: none;
+  margin: 0;
+}
+
+ul::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .enum ul li {
   float: left;
-  margin: 12px 0px 0 80px;
+  height: 60px;
+  width: 100px;
+  text-align: center;
 }
 
-.enum ul li a {
+.enum ul li p {
   text-align: center;
   text-decoration: none;
   color: white;
   font-family: PingFang SC;
   font-size: 16px;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
 }
 
-/* 还缺少选择高亮和点击高亮 */
-/* .nav ul li:hover {
-  text-align: center;
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
-} */
+.enum li:hover {
+  background-color:rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
 </style>
