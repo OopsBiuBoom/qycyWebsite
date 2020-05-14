@@ -1,5 +1,7 @@
 <template>
   <div>
+    <!-- 解决方案 -->
+    <solution/>
     <!-- 优秀案例 -->
     <excellentCase/>
     <!-- 严谨开发每一个项目 -->
@@ -23,9 +25,12 @@ import bottomPhotos from "@/components/main/index/main-photos.vue";
 import ourSuperiority from "@/components/main/index/main-ourSuperiority.vue";
 import devProduct from "@/components/main/index/main-dev-product.vue"
 import excellentCase from "@/components/main/index/main-excellent-case.vue"
+import solution from "@/components/main/index/main-solution.vue"
 
 export default {
   components: {
+    // 解决方案
+    solution,
     // 优秀案例
     excellentCase,
     // 严谨开发每一个项目

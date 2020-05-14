@@ -114,7 +114,6 @@ export default {
   },
   // 挂载成功
   mounted() {
-    console.log(this.items.length)
     if(this.items.length > 0) {
       this.selectIndex = 0
     }
