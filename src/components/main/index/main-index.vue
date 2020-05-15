@@ -1,5 +1,7 @@
 <template>
   <div>
+    <!-- 广告 -->
+    <ad/>
     <!-- 统计信息 -->
     <statistics/>
     <!-- 解决方案 -->
@@ -29,9 +31,12 @@ import devProduct from "@/components/main/index/main-dev-product.vue"
 import excellentCase from "@/components/main/index/main-excellent-case.vue"
 import solution from "@/components/main/index/main-solution.vue"
 import statistics from "@/components/main/index/main-statistics.vue"
+import ad from "@/components/main/index/main-ad.vue"
 
 export default {
   components: {
+    // 广告页面
+    ad,
     // 统计信息
     statistics,
     // 解决方案

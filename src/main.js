@@ -7,7 +7,7 @@ import router from "./router";
 // 导入ElementUI
 Vue.use(ElementUI)
 
-// 
+// 生产环境设置
 Vue.config.productionTip = (process.env.NODE_ENV === 'produciton');
 
 new Vue({
