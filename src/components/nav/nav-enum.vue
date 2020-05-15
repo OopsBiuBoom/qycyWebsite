@@ -1,8 +1,8 @@
 <template>
   <div class="enum">
     <ul>
-      <li v-for="item in items" :key="item.id">
-        <p @click="aDidSelect(item.id)">{{ item.title }}</p>
+      <li v-for="item in items" :key="item.id" @click="aDidSelect(item.id)">
+        <p>{{ item.title }}</p>
       </li>
     </ul>
   </div>
