@@ -23,7 +23,16 @@ export default {
   },
   methods: {
     aDidSelect(id) {
-      console.log(this.items[id].title)
+      switch (id) {
+        case 1:
+          // 跳转`主要页面`
+          this.$router.push("subIndex")
+          break;
+        case 2:
+          // 跳转`服务页面`
+          this.$router.push("server")
+          break;
+      }
     }
   }
 };
@@ -64,8 +73,7 @@ ul::after {
 }
 
 .enum li:hover {
-  background-color:rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
-
 </style>
