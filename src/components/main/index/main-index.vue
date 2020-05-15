@@ -1,5 +1,7 @@
 <template>
   <div>
+    <!-- 统计信息 -->
+    <statistics/>
     <!-- 解决方案 -->
     <solution/>
     <!-- 优秀案例 -->
@@ -26,9 +28,12 @@ import ourSuperiority from "@/components/main/index/main-ourSuperiority.vue";
 import devProduct from "@/components/main/index/main-dev-product.vue"
 import excellentCase from "@/components/main/index/main-excellent-case.vue"
 import solution from "@/components/main/index/main-solution.vue"
+import statistics from "@/components/main/index/main-statistics.vue"
 
 export default {
   components: {
+    // 统计信息
+    statistics,
     // 解决方案
     solution,
     // 优秀案例
