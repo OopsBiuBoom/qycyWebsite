@@ -18,7 +18,6 @@ import mainMessageItem from "@/components/main/index/main-message-item.vue";
 export default {
   data() {
     return {
-      title: "资讯中心",
       items: [
         {
           title: "这是我的文章标题1",
@@ -55,6 +54,7 @@ export default {
       ]
     };
   },
+  props: ['title'],
   components: {
     mainMessageItem
   }

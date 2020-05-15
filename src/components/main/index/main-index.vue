@@ -1,36 +1,42 @@
 <template>
+  <!-- 首页子页面 -->
   <div>
     <!-- 统计信息 -->
-    <statistics/>
+    <statistics />
     <!-- 解决方案 -->
-    <solution/>
+    <solution />
     <!-- 优秀案例 -->
-    <excellentCase/>
+    <excellentCase />
     <!-- 严谨开发每一个项目 -->
-    <devProduct/>
+    <devProduct />
     <!-- 我们的优势 -->
-    <ourSuperiority/>
+    <ourSuperiority />
     <!-- 一起前行 -->
-    <bottomPhotos/>
+    <bottomPhotos />
     <!-- 资讯中心 -->
-    <bottomMessage/>
+    <bottomMessage :title="messageTitle" :msgID="msgID"></bottomMessage>
     <!-- 首页底部介绍栏 -->
-    <bottomIntroduce/>
+    <bottomIntroduce />
   </div>
 </template>
 
 <script>
-
-import bottomIntroduce from "@/components/main/index/bottom-introduce.vue"
-import bottomMessage from "@/components/main/index/main-message.vue"
+import bottomIntroduce from "@/components/main/index/bottom-introduce.vue";
+import bottomMessage from "@/components/main/index/main-message.vue";
 import bottomPhotos from "@/components/main/index/main-photos.vue";
 import ourSuperiority from "@/components/main/index/main-ourSuperiority.vue";
-import devProduct from "@/components/main/index/main-dev-product.vue"
-import excellentCase from "@/components/main/index/main-excellent-case.vue"
-import solution from "@/components/main/index/main-solution.vue"
-import statistics from "@/components/main/index/main-statistics.vue"
+import devProduct from "@/components/main/index/main-dev-product.vue";
+import excellentCase from "@/components/main/index/main-excellent-case.vue";
+import solution from "@/components/main/index/main-solution.vue";
+import statistics from "@/components/main/index/main-statistics.vue";
 
 export default {
+  data() {
+    return {
+      messageTitle: '资讯中心',
+      msgID: "0"
+    }
+  },
   components: {
     // 统计信息
     statistics,
