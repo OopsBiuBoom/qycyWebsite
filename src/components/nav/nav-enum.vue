@@ -9,15 +9,17 @@
 </template>
 
 <script>
+import e from "@/common/enum";
+
 export default {
   data() {
     return {
       items: [
-        { title: "首页", id: 1 },
-        { title: "服务", id: 2 },
-        { title: "产品案例", id: 3 },
-        { title: "资讯", id: 4 },
-        { title: "关于我们", id: 5 }
+        { title: "首页", id: e.navIndex.index },
+        { title: "服务", id: e.navIndex.server },
+        { title: "产品案例", id: e.navIndex.case },
+        { title: "资讯", id: e.navIndex.message },
+        { title: "关于我们", id: e.navIndex.about }
       ]
     };
   },
@@ -26,11 +28,15 @@ export default {
       switch (id) {
         case 1:
           // 跳转`主要页面`
-          this.$router.push("subIndex")
+          this.$router.push("subIndex");
+          // 发送通知
+          PubSub.publish("navChange", id);
           break;
         case 2:
           // 跳转`服务页面`
-          this.$router.push("server")
+          this.$router.push("server");
+          // 发送通知
+          PubSub.publish("navChange", id);
           break;
       }
     }

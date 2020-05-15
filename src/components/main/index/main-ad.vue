@@ -1,6 +1,6 @@
 <template>
   <div class="main-swiper-container">
-    <el-carousel height="515px">
+    <el-carousel :height="adHeight">
       <el-carousel-item
         class="main-ad-container"
         :style="item.bgcolor"
@@ -14,9 +14,13 @@
 </template>
 
 <script>
+
+import e from "@/common/enum";
+
 export default {
   data() {
     return {
+      adHeight: "515px",
       items: [
         {
           img:
@@ -44,6 +48,17 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    PubSub.subscribe("navChange", (event, index) => {
+      switch(index){
+        case e.navIndex.index:
+          this.adHeight = "515px"
+          break
+        default: 
+          this.adHeight = "369px"
+      }
+    });
   }
 };
 </script>
