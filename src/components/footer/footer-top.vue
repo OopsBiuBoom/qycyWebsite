@@ -102,7 +102,7 @@ export default {
 
 .footertop-qrcode-box {
   width: 50%;
-  margin-top: 44px;
+  margin-top: 28px;
   float: right;
 }
 

@@ -11,16 +11,18 @@
     <goodCase />
     <!-- 资讯中心 -->
     <bottomMessage :title="messageTitle" :msgID="msgID"></bottomMessage>
+    <!-- 首页底部介绍栏 -->
+    <bottomIntroduce />
   </div>
 </template>
 
 <script>
-
 import statistics from "@/components/main/index/main-statistics.vue";
 import bottomMessage from "@/components/main/index/main-message.vue";
 import goodCase from "@/components/server/server-case.vue";
 import qualityServe from "@/components/server/server-qualityserve.vue";
 import businessValue from "@/components/server/server-business-value.vue";
+import bottomIntroduce from "@/components/main/index/bottom-introduce.vue";
 
 export default {
   data() {
@@ -39,7 +41,9 @@ export default {
     // 优秀案例
     goodCase,
     // 相关资讯
-    bottomMessage
+    bottomMessage,
+    // 底部介绍
+    bottomIntroduce
   }
 };
 </script>
