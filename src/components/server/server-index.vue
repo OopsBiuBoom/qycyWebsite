@@ -3,6 +3,8 @@
   <div>
     <!-- 统计信息 -->
     <statistics />
+    <!-- 商业价值 -->
+    <businessValue />
     <!-- 全面品质服务 -->
     <qualityServe />
     <!-- 优秀案例 -->
@@ -18,6 +20,7 @@ import statistics from "@/components/main/index/main-statistics.vue";
 import bottomMessage from "@/components/main/index/main-message.vue";
 import goodCase from "@/components/server/server-case.vue";
 import qualityServe from "@/components/server/server-qualityserve.vue";
+import businessValue from "@/components/server/server-business-value.vue";
 
 export default {
   data() {
@@ -29,6 +32,8 @@ export default {
   components: {
     // 统计信息
     statistics,
+    // 商业价值
+    businessValue,
     // 全方面品质服务
     qualityServe,
     // 优秀案例
