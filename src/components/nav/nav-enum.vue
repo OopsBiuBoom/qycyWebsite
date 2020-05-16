@@ -38,6 +38,12 @@ export default {
           // 发送通知
           PubSub.publish("navChange", id);
           break;
+        case 3:
+          // 跳转`产品案例页面`
+          this.$router.push("case");
+          // 发送通知
+          PubSub.publish("navChange", id);
+          break;
       }
     }
   }
