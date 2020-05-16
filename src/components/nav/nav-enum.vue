@@ -29,22 +29,22 @@ export default {
         case 1:
           // 跳转`主要页面`
           this.$router.push("subIndex");
-          // 发送通知
-          PubSub.publish("navChange", id);
           break;
         case 2:
           // 跳转`服务页面`
           this.$router.push("server");
-          // 发送通知
-          PubSub.publish("navChange", id);
           break;
         case 3:
           // 跳转`产品案例页面`
           this.$router.push("case");
-          // 发送通知
-          PubSub.publish("navChange", id);
+          break;
+        case 5:
+          // 跳转`关于我们页面`
+          this.$router.push("about");
           break;
       }
+      // 发送通知
+      PubSub.publish("navChange", id);
     }
   }
 };

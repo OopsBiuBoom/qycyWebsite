@@ -14,10 +14,13 @@
 </template>
 
 <script>
+
+import commonVar from "@/common/common.js"
+
 export default {
     data() {
         return {
-            "phone": "18948359571"
+            "phone": commonVar.phone
         }
     },
 }

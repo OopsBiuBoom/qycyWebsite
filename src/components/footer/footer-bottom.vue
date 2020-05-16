@@ -21,16 +21,19 @@
     </div>
 
     <!-- 版权 -->
-    <p class="copyright">{{ copyright }}</p>
+    <p class="copyright">{{ copyright }} <span>{{ phone }}</span></p>
   </div>
 </template>
 
 <script>
+import commonVar from "@/common/common.js"
+
 export default {
   data() {
     return {
+      phone: commonVar.phone,
       copyright: `Copyright ©  深圳麒越创意开发科技有限公司& 互联网+项目定制开发平台  备案号：粤ICP备19254262-1
-地址：深圳市龙华区民治街道办西头新村   联系人：易经理  18948359571`,
+地址：深圳市龙华区民治街道办西头新村   联系人：易经理  `,
       linkItems: [
         { name: "百度", url: "https://www.baidu.com" },
         { name: "新浪", url: "https://www.sina.com" },
