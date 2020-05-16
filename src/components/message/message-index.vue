@@ -3,6 +3,8 @@
   <div>
     <!-- 我们的优势 -->
     <ourSuperiority />
+    <!-- 分割线 -->
+    <div class="line"></div>
   </div>
 </template>
 
@@ -15,3 +17,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.line {
+  height: 1px;
+  background-color: #E3E3E3;
+}
+</style>

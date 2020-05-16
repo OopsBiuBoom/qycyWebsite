@@ -9,6 +9,11 @@
     <excellentCase />
     <!-- 严谨开发每一个项目 -->
     <devProduct />
+    <!-- 箭头 -->
+    <div class="arrow-spae">
+      <!-- <div class="arrow-container"></div> -->
+      <img class="arrow" src="../../../assets/indx-arrow.png" />
+    </div>
     <!-- 我们的优势 -->
     <ourSuperiority />
     <!-- 一起前行 -->
@@ -33,9 +38,9 @@ import statistics from "@/components/main/index/main-statistics.vue";
 export default {
   data() {
     return {
-      messageTitle: '资讯中心',
+      messageTitle: "资讯中心",
       msgID: "0"
-    }
+    };
   },
   components: {
     // 统计信息
@@ -57,3 +62,17 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.arrow {
+  position: absolute;
+  top: -55px;
+  left: 48%;
+
+}
+
+.arrow-spae {
+  position: relative;
+  height: 80px;
+}
+</style>

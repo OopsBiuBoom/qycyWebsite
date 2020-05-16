@@ -1,9 +1,5 @@
 <template>
   <div class="main-ourSuperiority-container">
-    <!-- 箭头 -->
-    <div class="main-ourSuperiority-arrow">
-      <img src="../../../assets/indx-arrow.png">
-    </div>
     <!-- 我们的优势 -->
     <h1>我们的优势</h1>
     <div class="main-ourSuperiority-line"></div>
@@ -68,14 +64,8 @@ export default {
 
 .main-ourSuperiority-container h1 {
   font-size: 35px;
-  margin: 150px 0 31px 0;
+  margin: 34px 0 31px 0;
   text-align: center;
-}
-
-.main-ourSuperiority-arrow {
-  position: absolute;
-  top: -200px;
-  left: 46.5%;
 }
 
 .main-ourSuperiority-line {

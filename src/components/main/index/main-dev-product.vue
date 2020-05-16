@@ -80,7 +80,7 @@ export default {
 }
 
 .main-dev-product-itembox {
-  margin: 46px 100px 103px 100px;
+  margin: 46px 100px 100px 100px;
 }
 
 .main-dev-product-itembox::after {
