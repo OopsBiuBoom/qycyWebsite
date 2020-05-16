@@ -89,6 +89,26 @@ export default {
   margin-left: 20px;
 }
 
+.server-business-value-item:hover {
+    background-color: #007df1;
+}
+
+.server-business-value-item:hover .server-business-value-item-title {
+    color: white;
+}
+
+.server-business-value-item:hover .server-business-value-item-line {
+    background-color: white;
+}
+
+.server-business-value-item:hover .server-business-value-item-content {
+    color: white;
+}
+
+.server-business-value-item:hover .server-business-value-item-button {
+    border: 1px solid white; 
+}
+
 .server-business-value-itemBox {
   margin-top: 31px;
 }
@@ -142,9 +162,6 @@ export default {
 }
 
 .server-business-value-item:nth-child(3) .server-business-value-item-button {
-    margin-top: 21px; 
+  margin-top: 21px;
 }
-
-
-
 </style>
