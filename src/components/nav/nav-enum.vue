@@ -38,6 +38,10 @@ export default {
           // 跳转`产品案例页面`
           this.$router.push("case");
           break;
+        case 4:
+          // 跳转`资讯页面`
+          this.$router.push("message");
+          break;
         case 5:
           // 跳转`关于我们页面`
           this.$router.push("about");

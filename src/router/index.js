@@ -5,6 +5,7 @@ import serverIndex from "@/components/server/server-index.vue";
 import indexMain from "@/components/main/main.vue";
 import caseIndex from "@/components/case/case-index.vue";
 import aboutIndex from "@/components/about/about-index.vue";
+import messageIndex from "@/components/message/message-index.vue";
 
 Vue.use(VueRouter);
 
@@ -32,6 +33,11 @@ const routes = [
         // 产品案例
         path: "case",
         component: caseIndex
+      },
+      {
+        // 资讯页
+        path: "message",
+        component: messageIndex
       },
       {
         // 关于我们
