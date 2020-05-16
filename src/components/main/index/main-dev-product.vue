@@ -12,11 +12,8 @@
           :key="index"
           :info="item"
         ></devProductItem>
-            <div style="clear:both;"></div>
-
       </div>
     </div>
-    <div style="clear:both;"></div>
   </div>
 </template>
 
@@ -60,6 +57,12 @@ export default {
 .main-dev-product-box {
   width: 1200px;
   margin: auto;
+}
+
+.main-dev-product-box::after {
+  content: "xxx";
+  display: block;
+  visibility: hidden;
 }
 
 .dev-product-title {

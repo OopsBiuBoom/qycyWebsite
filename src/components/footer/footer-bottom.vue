@@ -55,10 +55,10 @@ export default {
 
 .footerbottom-interlinkingbox {
   width: 1200px;
-  height: 110px;
   margin: 0 auto;
   display: flex;
   display: -webkit-flex;
+  margin-bottom: 22px; 
 }
 
 .copyright {

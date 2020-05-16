@@ -63,7 +63,6 @@ export default {
 
 <style scoped>
 .footertop-container {
-  height: 250px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -75,10 +74,17 @@ export default {
   margin: 0 auto;
 }
 
+.footertop-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .footertop-ability-box {
   width: 50%;
   height: 100%;
-  margin-top: 45px;
+  margin-top: 28px;
+  margin-bottom: 24px;
   float: left;
 }
 
