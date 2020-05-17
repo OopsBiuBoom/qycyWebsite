@@ -8,16 +8,20 @@
 body {
   margin: 0px;
   padding: 0px;
+  font-family: "Microsoft Yahei", "微软雅黑", "Arial", "sans-serif", "Helvetica Neue", "Helvetica", "PingFang SC";
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
   font-size: 10px;
-  font-family: PingFang SC;
 }
 
 /* 标题统一字体 */
+.common-title {
+  font-size: 35px;
+}
+
 .common-title {
   font-size: 35px;
 }
