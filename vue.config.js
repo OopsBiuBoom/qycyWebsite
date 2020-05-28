@@ -1,7 +1,7 @@
 module.exports = {
     devServer: {
         port: 6677,
-        host: '192.168.31.66',
+        host: 'localhost',
         open: true, // 编译完成自动打开
         https: false, // 不开启https
     },
